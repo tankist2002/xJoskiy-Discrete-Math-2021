@@ -1,5 +1,10 @@
 from natural import *
 
+def ABS_Z_N(celoe):# на вход целое число
+    if celoe[0]==1 :# если число отрицательное 
+        celoe[0]=2 #vtyztv pyfr
+    return celoe
+
 def POZ_Z_D(mas): # на вход функция получает целое число
     # Семёнов Михаил
     # Знак целого числа
