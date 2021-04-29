@@ -141,5 +141,4 @@ def SUB_NDN_N(nat1,nat2,number):
         result = SUB_NN_N(nat1,nat2_mull_nd_n)#вычитаем из первого второе ,умноженное на цифру
     else:#другие случаи не рассматриваем
         print("Операция недоступна для данных чисел")
-        break
     return result
