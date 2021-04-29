@@ -32,34 +32,34 @@ def SUB_ZZ_Z(celoe1,celoe2): # на вход функция получает 2 �
             
             sum_res = ADD_NN_N(celoe1_nat,celoe2) # складываем модули чисел
             
-            result = '1' + sum_res # результат
+            result = [1] + sum_res # результат
         elif poz1 == 2 and poz2 == 1: # число 1 положительное
             
             celoe2_nat = ABS_Z_N(celoe2) # модуль числа 1
             
             sum_res = ADD_NN_N(celoe1,celoe2_nat) # складываем модули чисел
             
-            result = '2' + sum_res # результат
+            result = [2] + sum_res # результат
         elif poz1 == 0: # число 1 равно "0"
             if poz2 == 2: # число 2 положительное
-                result = '1' + celoe2 # результат
+                result = [1] + celoe2 # результат
             else:
                 if poz2 == 1: # число 2 отрицательное
                     
                     celoe2_nat = ABS_Z_N(celoe2) # находим модуль 2 числа
 
-                    result ='2' + celoe2 # результат
+                    result =[2] + celoe2 # результат
                 else : 
-                    celoe2_nat = '0'
-                    result ='0' + celoe2_nat# результат
+                    celoe2_nat = [0]
+                    result =[0] + celoe2_nat# результат
         else: # число 2 равно "0"
             if poz1 == 1: # число 1 отрицательное
                 
                 celoe1_nat = ABS_Z_N(celoe1) # находим модуль числа 1
                 
-                result = '1' + celoe1_nat # результат
+                result = [1] + celoe1_nat # результат
             else:
-                result ='2' + celoe1 # результат
+                result =[2] + celoe1 # результат
     else :
         if poz1 == 2: # число 1 положительное
             
@@ -67,10 +67,10 @@ def SUB_ZZ_Z(celoe1,celoe2): # на вход функция получает 2 �
             
             if sravnenie ==  2 or sravnenie == 0:
                 
-                result ='2' + SUB_NN_N(celoe1,celoe2) # результат
+                result =[2] + SUB_NN_N(celoe1,celoe2) # результат
                 
             else:
-                result = '1' + SUB_NN_N(celoe2,celoe1) # результат
+                result = [1] + SUB_NN_N(celoe2,celoe1) # результат
         elif poz1 == 1:
             
             celoe1_nat = ABS_Z_N(celoe1) # модуль числа 1
@@ -80,11 +80,11 @@ def SUB_ZZ_Z(celoe1,celoe2): # на вход функция получает 2 �
             sravnenie = COM_NN_D(celoe1_nat,celoe2_nat) # сравниваем модули чисел
             
             if sravnenie ==  1 or sravnenie == 0:
-                 result ='2' + SUB_NN_N(celoe2_nat,celoe1_nat) # результат
+                 result =[2] + SUB_NN_N(celoe2_nat,celoe1_nat) # результат
             else:
-                result = '1' + SUB_NN_N(celoe1_nat,celoe2_nat) # результат
+                result = [1] + SUB_NN_N(celoe1_nat,celoe2_nat) # результат
         else:
-            result = '0' + celoe1# результат
+            result = [0] + celoe1# результат
     return result
   
     
